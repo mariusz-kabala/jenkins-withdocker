@@ -14,5 +14,5 @@ RUN apt-get update && \
       $(lsb_release -cs) \
       stable" && \
    apt-get update && \
-   apt-get -y install docker-ce
+   apt-get -y install docker-ce && \
    apt-get -y install ssh-askpass

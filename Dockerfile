@@ -27,7 +27,6 @@ RUN apt-get update && \
    rm -rf /var/lib/apt/lists/* && \
    wget --quiet https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh -O /usr/sbin/wait-for-it.sh && \
    chmod +x /usr/sbin/wait-for-it.sh && \
-   apt-get -y install ssh-askpass && \
    curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && \
    sudo chmod +x /usr/local/bin/docker-compose
 
